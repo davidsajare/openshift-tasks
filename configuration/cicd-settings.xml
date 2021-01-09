@@ -1,0 +1,49 @@
+<settings>
+  <servers>
+     <server>
+        <id>nexus</id>
+        <username>admin</username>
+        <password>password</password>
+     </server>
+     <server>
+        <id>nexus3</id>
+        <username>admin</username>
+        <password>password</password>
+     </server>
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://172.16.32.99:8081/repository/maven-public</url>
+      <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>nexus</id>
+      <!--Enable snapshots for the built in central repo to direct -->
+      <!--all requests to nexus via the mirror -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://public</url>
+          <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+     <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>http://172.16.32.99:8081/repository/maven-public</url>
+          <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!--make the profile active all the time -->
+    <activeProfile>nexus</activeProfile>
+  </activeProfiles>
+</settings>
