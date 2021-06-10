@@ -21,7 +21,7 @@
       <!--This sends everything else to /public -->
       <id>public</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://172.16.32.99:8081/repository/maven-public/</url>
+      <url>http://172.16.32.223:8081/repository/maven-public/</url>
     </mirror>
   </mirrors>
   <profiles>
@@ -32,7 +32,7 @@
       <repositories>
         <repository>
           <id>public</id>
-          <url>http://172.16.32.99:8081/repository/maven-public/</url>
+          <url>http://172.16.32.223:8081/repository/maven-public/</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
@@ -40,7 +40,7 @@
      <pluginRepositories>
         <pluginRepository>
           <id>public</id>
-          <url>http://172.16.32.99:8081/repository/maven-public/</url>
+          <url>http://172.16.32.223:8081/repository/maven-public/</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
