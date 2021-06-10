@@ -3,17 +3,17 @@
      <server>
         <id>public</id>
         <username>admin</username>
-        <password>password</password>
+        <password>admin</password>
      </server>
      <server>
         <id>release</id>
         <username>admin</username>
-        <password>password</password>
+        <password>admin</password>
      </server>
      <server>
         <id>snapshot</id>
         <username>admin</username>
-        <password>password</password>
+        <password>admin</password>
      </server>
   </servers>
   <mirrors>
