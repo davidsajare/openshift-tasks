@@ -62,7 +62,7 @@
             <id>public</id> 
 
             <!-- 远程仓库URL，按protocol://hostname/path形式 --> 
-            <url>http://172.16.32.99:8081/repository/maven-public/</url>
+            <url>http://172.16.32.223:8081/repository/maven-public/</url>
             <releases>
 				<enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -85,7 +85,7 @@
 		</pluginRepository>-->
         <pluginRepository>
 			<id>public</id>
-			<url>http://172.16.32.99:8081/repository/maven-public/</url>
+			<url>http://172.16.32.223:8081/repository/maven-public/</url>
 			<releases>
 				<enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -98,11 +98,11 @@
 	<distributionManagement>
 		<repository>
 			<id>release</id>
-			<url>http://172.16.32.99:8081/repository/maven-releases/</url>
+			<url>http://172.16.32.223:8081/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot</id>
-			<url>http://172.16.32.99:8081/repository/maven-snapshots/</url>
+			<url>http://172.16.32.223:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencyManagement>
@@ -357,13 +357,13 @@
 				<repository>
 					<id>release</id>
 					<name>Releases</name>
-					<url>http://172.16.32.99:8081/repository/maven-releases/</url>
+					<url>http://172.16.32.223:8081/repository/maven-releases/</url>
 				</repository>
 	                                                                                                                      
 		<snapshotRepository>
 					<id>snapshot</id>
 					<name>snapshot</name>
-					<url>http://172.16.32.99:8081/repository/maven-snapshots/</url>
+					<url>http://172.16.32.223:8081/repository/maven-snapshots/</url>
 				</snapshotRepository>
 
 
