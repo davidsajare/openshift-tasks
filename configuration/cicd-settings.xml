@@ -3,7 +3,7 @@
      <server>
         <id>nexus</id>
         <username>admin</username>
-        <password>password</password>
+        <password>admin</password>
      </server>
      <server>
         <id>nexus3</id>
